@@ -1,0 +1,25 @@
+.marco, .video{
+	border-width: 10px;
+	border-color: orange;
+	border-style: solid;
+}
+
+.marco{
+	float: left;
+}
+
+.video{
+	float: left;
+	margin-bottom: 0px;
+}
+
+.nombre{
+	padding-bottom: 25px;
+	background: orange;
+	color: red;
+	font-size: 30px;
+}
+
+.clear{
+	clear: both;
+}

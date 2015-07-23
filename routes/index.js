@@ -5,10 +5,18 @@ var quizController = require('../controllers/quiz_controller');
 
 /* GET home page. */
 router.get('/', function(req, res) {
-  res.render('index', { title: 'Quiz', body: 'El portal donde podrá crear sus propios juegos!' });
+  res.render('index', { 
+  	title: 'Quiz', 
+  	body: 'El portal donde podrá crear sus propios juegos!' });
 });
 
 router.get('/quizes/question', quizController.question);
 router.get('/quizes/answer', quizController.answer);
+
+router.get('/author', function(req, res){
+	res.render('author',{
+		nombre: 'Sergio Calera'
+	});
+});
 
 module.exports = router;
